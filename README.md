@@ -1,20 +1,17 @@
 <div align="center">
   <br />
-    <a href="https://www.youtube.com/watch?v=dCLhUialKPQ" target="_blank">
-      <img src="public/readme/hero.png" alt="Project Banner">
-    </a>
-  <br />
   
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Vite-black?style=for-the-badge&logoColor=white&logo=vite&color=646CFF" alt="vite" />
   </div>
 
-  <h3 align="center">A Movie Application</h3>
+  <h3 align="center">WatchTime - Movie Discovery Application</h3>
 
    <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+     A modern movie discovery app with trending search analytics powered by TMDB API and Appwrite Tables.
     </div>
 </div>
 
@@ -24,52 +21,31 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
-
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://www.youtube.com/watch?v=dCLhUialKPQ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+5. � [Deployment](#deployment)
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with React.js for the user interface, Appwrite for backend services, and styled with TailwindCSS, this Movie App lets users browse trending movies, search titles, and explore content using the TMDB API. It features a responsive layout and a sleek, modern design.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+WatchTime is a modern movie discovery application built with React.js, Appwrite Tables, and styled with TailwindCSS. The app allows users to browse popular movies, search for specific titles, and track trending searches through an intelligent algorithm powered by Appwrite's database. It features a clean, responsive design and real-time search analytics.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **[Appwrite](https://appwrite.io/)** is an open-source Backend-as-a-Service (BaaS) platform that provides developers with a set of APIs to manage authentication, databases, storage, and more, enabling rapid development of secure and scalable applications.
-
-- **[React.js](https://react.dev/reference/react)** is a JavaScript library developed by Meta for building user interfaces. It allows developers to create reusable UI components that manage their own state, leading to more efficient and predictable code. React is widely used for developing single-page applications (SPAs) due to its virtual DOM that improves performance and ease of maintenance.
-
-- **[React-use](https://github.com/streamich/react-use)** is a collection of essential React hooks that simplify common tasks like managing state, side effects, and lifecycle events, promoting cleaner and more maintainable code in React applications.
-
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing custom CSS, enabling rapid and responsive UI development.
-
-- **[Vite](https://vite.dev/)** is a modern build tool that provides a fast development environment for frontend projects. It offers features like hot module replacement (HMR) and optimized builds, enhancing the development experience and performance.
+- **React.js 19** - Modern UI library for building interactive user interfaces
+- **Vite** - Fast build tool with hot module replacement
+- **Appwrite TablesDB** - Backend-as-a-Service for database management and search analytics
+- **TMDB API** - The Movie Database API for fetching movie data
+- **Tailwind CSS 4** - Utility-first CSS framework for responsive design
+- **React-use** - Collection of essential React hooks for state management
 
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Browse All Movies**: Explore a wide range of movies available on the platform.
-
-👉 **Search Movies**: Easily search for specific movies using a search function.
-
-👉 **Trending Movies Algorithm**: Displays trending movies based on a dynamic algorithm.
-
-👉 **Modern UI/UX**: A sleek and user-friendly interface designed for a great experience.
-
-👉 **Responsiveness**: Fully responsive design that works seamlessly across devices.
-
-and many more, including code architecture and reusability
+- **Movie Discovery**: Browse popular movies fetched from TMDB API
+- **Real-time Search**: Search movies with debounced input for optimal performance
+- **Trending Analytics**: Track and display top 10 most searched movies using Appwrite Tables
+- **Search Count Tracking**: Automatically increment search counts for trending analysis
+- **Responsive Design**: Fully responsive UI that works seamlessly on all devices
+- **Modern UI/UX**: Clean interface with gradient effects and smooth animations
+- **Fast Performance**: Built with Vite for lightning-fast development and production builds
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -86,9 +62,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/react-movies.git
-cd react-movies
-
+git clone https://github.com/MotiWolff/WatchTime.git
+cd WatchTime
 ```
 
 **Installation**
@@ -101,17 +76,31 @@ npm install
 
 **Set Up Environment Variables**
 
-Create a new file named `.env.local` in the root of your project and add the following content:
+Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-VITE_TMDB_API_KEY=
-
-VITE_APPWRITE_PROJECT_ID=
-VITE_APPWRITE_DATABASE_ID=
-VITE_APPWRITE_COLLECTION_ID=
+VITE_TMDB_API_KEY=your_tmdb_bearer_token
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+VITE_APPWRITE_TABLE_ID=metrics
 ```
 
-Replace the placeholder values with your actual **[TheMovieDatabase API](https://developer.themoviedb.org/reference/intro/getting-started)** and **[Appwrite](https://apwr.dev/JSM050)** credentials.
+**Get your credentials:**
+
+1. **TMDB API Key**: 
+   - Sign up at [The Movie Database](https://www.themoviedb.org/)
+   - Go to Settings > API
+   - Copy your API Read Access Token (Bearer Token)
+
+2. **Appwrite Credentials**:
+   - Create an account at [Appwrite Cloud](https://cloud.appwrite.io/)
+   - Create a new project and copy the Project ID
+   - Create a database and copy the Database ID
+   - Create a table named "metrics" with the following columns:
+     - `searchTerm` (string)
+     - `count` (integer)
+     - `movie_id` (integer)
+     - `poster_url` (string)
 
 **Running the Project**
 
@@ -121,7 +110,25 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
-## <a name="snippets">🕸️ Snippets</a>
+## <a name="deployment">🚀 Deployment</a>
+
+This project is deployed on Vercel. To deploy your own instance:
+
+1. Push your code to GitHub
+2. Import the repository on [Vercel](https://vercel.com/)
+3. Add your environment variables in Vercel project settings
+4. Deploy!
+
+**Live Demo**: [https://watch-time-plu6nghox-mordechay-wolffs-projects.vercel.app](https://watch-time-plu6nghox-mordechay-wolffs-projects.vercel.app)
+
+Alternatively, deploy using Vercel CLI:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+## <a name="snippets">🕸️ Code Snippets</a>
 
 <details>
 <summary><code>index.css</code></summary>
@@ -321,21 +328,13 @@ export default Spinner
 </details>
 
 
-## <a name="links">🔗 Assets</a>
+---
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/react25-kit)**.
+## �‍💻 Author
 
-<a href="https://jsm.dev/react25-kit" target="_blank">
-  <img src="public/readme/videokit.png" alt="Video Kit Banner">
-</a>
+**Mordechay Wolff**
+- GitHub: [@MotiWolff](https://github.com/MotiWolff)
 
-## <a name="more">🚀 More</a>
+## � License
 
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsm.dev/react25-jsmpro" target="_blank">
-  <img src="public/readme/jsmpro.png" alt="Project Banner">
-</a>
+This project is open source and available under the MIT License.
